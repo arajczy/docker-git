@@ -1,0 +1,6 @@
+[init]
+  defaultbranch = trunk
+[pull]
+  rebase = false
+[push]
+  default = simple
