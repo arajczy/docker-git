@@ -2,11 +2,13 @@
 
 ## Usage
 
+`pull arajczy/git`
+
 `docker run -i --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh arajczy/git`
 
 ## Install dockerized git as application
 
-```sh
+```shell
 pull arajczy/git
 mkdir -p /storage/bin
 
