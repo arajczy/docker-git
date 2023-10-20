@@ -1,5 +1,7 @@
 FROM alpine
 
+ARG TARGETPLATFORM="linux/arm64"
+
 LABEL org.opencontainers.image.authors="arajczy" \
       org.opencontainers.image.description="Dockerized git application" \
       org.opencontainers.image.version="1.0.0"
