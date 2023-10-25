@@ -36,7 +36,7 @@ jobs:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
         with:
-          platforms: 'arm64,arm,armv8'
+          platforms: 'arm64,arm,aarch64'
 
       # Set up BuildKit Docker container builder to be able to build
       # multi-platform images and export cache
