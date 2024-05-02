@@ -84,4 +84,4 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: ${{ env.REGISTRY_IMAGE }}
+          repository: ${{ env.IMAGE_NAME }}
