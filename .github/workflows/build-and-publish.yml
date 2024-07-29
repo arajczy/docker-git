@@ -31,9 +31,9 @@ jobs:
             ${{ env.IMAGE_NAME }}
             ghcr.io/${{ env.IMAGE_NAME }}
           labels: |
-            org.opencontainers.image.authors="Adam Rajczy"
-            org.opencontainers.image.description="Dockerized git application"
-            org.opencontainers.image.usage="docker run -i --rm -v $(pwd):/git -v $HOME/.gitconfig:/.gitconfig -v $HOME/.ssh:/root/.ssh arajczy/git \"$@\""
+            org.opencontainers.image.authors=Adam Rajczy
+            org.opencontainers.image.description=Dockerized git application
+            org.opencontainers.image.usage=docker run -i --rm -v $(pwd):/git -v $HOME/.gitconfig:/.gitconfig -v $HOME/.ssh:/root/.ssh arajczy/git "$@"
           tags: latest
 
       - name: Set up QEMU
