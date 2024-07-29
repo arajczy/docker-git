@@ -2,8 +2,10 @@
 
 ## Usage
 
-`pull arajczy/git`
+Pull the image from registry:
+`docker pull arajczy/git`
 
+run the container:
 `docker run -i --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh arajczy/git`
 
 ## Install dockerized git as application
