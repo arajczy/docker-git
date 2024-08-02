@@ -1,25 +1,46 @@
-# Dockerized git application for use in LibreELEC
+# Dockerized git application for use @ LibreELEC
 
 ## Usage
 
-Pull the image from registry:
-`docker pull arajczy/git`
+1.  Pull the image from registry:
 
-run the container:
-`docker run -i --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh arajczy/git`
+    ```shell
+    docker pull arajczy/git
+    ```
 
-## Install dockerized git as application
+2.  run the container:
 
-```shell
-pull arajczy/git
+    ```shell
+    docker run -i --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh arajczy/git
+    ```
 
-mkdir -p /storage/bin
-echo '#!/bin/sh' > /storage/bin/git
-echo 'docker run -i --rm -v $(pwd):/git -v $HOME/.gitconfig:/.gitconfig -v $HOME/.ssh:/root/.ssh arajczy/git "$@"' >> /storage/bin/git
-echo 'export PATH=/storage/bin:$PATH' >> /storage/.profile
+## Install dockerized git application @ LibreELEC
 
-source /storage/.profile
+1.  Pull the image
 
-git --version
+    ```shell
+    pull arajczy/git
+    ```
+
+2.  Add application script
+
+    ```shell
+    mkdir -p /storage/bin
+    echo '#!/bin/sh' > /storage/bin/git
+    echo 'docker run -i --rm -v $(pwd):/git -v $HOME/.gitconfig:/.gitconfig -v $HOME/.ssh:/root/.ssh arajczy/git "$@"' >> /storage/bin/git
+    echo 'export PATH=/storage/bin:$PATH' >> /storage/.profile
+    ```
+
+3.  Source `.profile`
+
+    ```shell
+    source /storage/.profile
+    ```
+
+4.  Run the application
+
+    ```shell
+    git --version
+    ```
 ```
 
