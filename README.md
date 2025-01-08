@@ -1,4 +1,4 @@
-# [Dockerized git application for use @ LibreELEC](https://github.com/arajczy/docker/git)
+# [Dockerized git application for use @ LibreELEC](https://github.com/arajczy/docker-git)
 
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/arajczy/git/latest?logo=docker)
 ![Docker Pulls](https://img.shields.io/docker/pulls/arajczy/git?logo=docker)
